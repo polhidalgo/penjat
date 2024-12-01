@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Adivinar Palabra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="password" id="palabraInput" placeholder="Introdueix una paraula">
+        <button id="verPalabra" onclick="togglePassword()">👁️</button>
+        <button id="comenzarJuego" onclick="iniciarJuego()">Començar partida</button>
+    </header>
+    <section id="juego">
+        <div id="palabraOculta"></div>
+        <div id="intentosRestantes">
+            <img srcset="\img\img_10.jpg"/>
+        </div>
+        <div id="botonesLetras"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

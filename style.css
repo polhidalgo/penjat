@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header input {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+    width: 200px;
+}
+
+header button {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: #ffa07a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+    background-color: #ff6347;
+}
+
+/* Juego Section */
+#juego {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+#palabraOculta {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #2f4f4f;
+    margin-bottom: 20px;
+}
+
+#intentosRestantes img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Botones Letras */
+#botonesLetras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#botonesLetras button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#botonesLetras button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #478ed1, #42a5f5);
+}
+
+#botonesLetras button:disabled {
+    background: gray;
+    cursor: not-allowed;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header input {
+        width: 90%;
+    }
+
+    #juego {
+        padding: 20px;
+        width: 100%;
+    }
+}
